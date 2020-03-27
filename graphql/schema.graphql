@@ -1,0 +1,8 @@
+type Wang {
+  name: String!
+  desc: String!
+}
+
+type Query {
+  name: Wang!
+}

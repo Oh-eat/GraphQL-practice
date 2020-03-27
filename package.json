@@ -1,0 +1,17 @@
+{
+  "name": "GraphQL-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Wangwange/GraphQL-practice",
+  "author": "Wangwange <ltk6031@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "start": "nodemon"
+  }
+}
