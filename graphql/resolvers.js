@@ -1,11 +1,13 @@
-const Wang = {
-  name: "wang",
-  desc: "wangwang!"
-};
+const Movie = require("./db");
 
 const resolvers = {
   Query: {
-    name: () => Wang
+    movies: () => Movie.movies,
+    movie: (_, { id }) => Movie.getById(id)
+  },
+  Mutation: {
+    addMovie: (_, { title, score }) => Movie.addMovie({ title, score }),
+    deleteMovie: (_, { id }) => Movie.deleteMovie({ id })
   }
 };
 
